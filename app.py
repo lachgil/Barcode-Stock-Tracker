@@ -31,7 +31,7 @@ while True:
 		input["month"] = now.month
 		input["year"] = now.year
 		fins = raw_input("Please confirm the information is correct? Y/N:")
-		if fins != "TRUE":
+		if fins != "Y":
 			raise NameError('User reset')
 		else:
 			write(input)
