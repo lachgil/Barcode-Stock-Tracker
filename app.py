@@ -17,10 +17,10 @@ def write(input):
 while True:
 	try:
 		input = OrderedDict()
-		input["name"] = False
-		input["model"] = False
-		input["serial number"] = False
-		input["in-out"] = False
+		input["name"] = False # scan from barcode
+		input["model"] = False # scan from product
+		input["serial number"] = False # scan from product
+		input["in-or-out"] = False # Print in and out barcodes to be scanned 
 		now = datetime.datetime.now()
 		for item in input.keys():
 			input[item] = raw_input("Scan %s: "%item).upper()
